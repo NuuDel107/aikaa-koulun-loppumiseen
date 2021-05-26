@@ -1,0 +1,76 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+.clock-container {
+    /* position in webpage */
+    position: relative;
+    display: grid;
+    width: 90%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    top: 10%;
+
+    /* grid */
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 100%;
+
+    /* styling */
+    
+
+
+}
+
+.unit {
+    margin: 0px;
+    text-align: center;
+    border: 5px solid white;
+}
+
+.numbers {
+    margin: 0px;
+    height: 300px;
+    font-size: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    background-color: whitesmoke;
+}
+
+.title {
+    height: 55px;
+    padding-top: 15px;
+    font-family: Georgia;
+    font-size: 30px;
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+.otsikko {
+    text-align:center;
+    padding: 20px;
+    padding-bottom: 0px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+@media (max-width: 1000px) {
+
+    .clock-container {
+        grid-template-rows: repeat(2, 50%);
+        grid-template-columns: repeat(2, 50%);
+        height: 500px;
+    }
+
+    .numbers {
+        height: 150px;
+        font-size: 100px;
+    }
+
+    .otsikko {
+        margin-bottom: 0px;
+    }
+}
