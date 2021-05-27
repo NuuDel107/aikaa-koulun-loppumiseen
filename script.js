@@ -17,7 +17,7 @@ function updateTimer() {
   // When the countdown ends
   if (distance < 0) {
     clearInterval(x);
-    window.location.replace("https://aikaa-kesan-loppumiseen.tk");
+    window.location.replace("https://aikaa-kesaloman-loppumiseen.tk");
   }
    // Output the result in the HTML elements
   else {
